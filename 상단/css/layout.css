@@ -65,18 +65,9 @@ li:hover .globalbox{
     /* 인라인 태그 a라서 상하 스타일 안먹힘 */
     padding-bottom: 10px;
 }
-/* 지구본안보임 */
-.globala i:nth-child(1){
-    display: none;
+
+li:hover .globala i::before
+{
+    content: "\F3EE";
 }
-/* 하버됐을때 지구본보임 */
-li:hover .globala i:nth-child(1){
-    display: block;
-}
-/* 하버됐을때 번역안보임 */
-li:hover .globala i:nth-child(2){
-    display: none;
-}
-.globala i:nth-child(2){
-    display: block;
-}
+
