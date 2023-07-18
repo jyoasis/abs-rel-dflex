@@ -1,0 +1,68 @@
+.container{
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.rel{
+    position: relative;
+}
+.abs{
+    position: absolute;
+}
+.fix{
+    position: fixed;
+}
+
+#hd{
+    background-color: rgba(255, 123, 174, 0.575);
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 0;
+}
+#hd>div{
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hd a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    padding-left:0.5rem;
+    padding-right: 0.5rem;
+}
+
+.globalbox{
+    left: -1rem;
+    width: 100px;
+    top: 120%;
+    background-color: transparent;
+    border: 3px solid transparent;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-indent: 0.8rem;
+}
+
+#hd .globalbox a{
+    color:palevioletred;
+}
+li:hover .globalbox{
+    height: 5rem;
+    border-color: #fff0f085;
+}
+.globala{
+    display: block; 
+    /* 인라인 태그 a라서 상하 스타일 안먹힘 */
+    padding-bottom: 10px;
+}
+
